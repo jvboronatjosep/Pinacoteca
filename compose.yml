@@ -1,12 +1,12 @@
 services:
   db:
-    image: jvboronatjosep/pinoteca_db:v1
-    container_name: contenedorPinoteca_db
+    image: jvboronatjosep/Pinacoteca_db:v1
+    container_name: contenedorPinacoteca_db
     ports:
       - "3306:3306"
   php:
-    image: jvboronatjosep/pinoteca_app:v1
-    container_name: contenedorPinoteca_app
+    image: jvboronatjosep/Pinacoteca_app:v1
+    container_name: contenedorPinacoteca_app
     ports:
       - "8080:80"
     depends_on:
